@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#app {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    position: relative;
+}
+
+
+nav {
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+}
+
+nav .links {
+    margin-left: 50px;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: #555;
+    padding: 15px;
+    font-size: 17px;
+    position: relative;
+}
+
+nav .links a:first-child {
+    font-style: 19px;
+    color: #777;
+}
+
+nav .links a:first-child::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: mediumaquamarine;
+    bottom: 0px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.logo {
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    color: #888;
+    position: relative;
+}
+
+.logo span {
+    position: relative;
+    left: -5px;
+    color: mediumaquamarine;
+    font-size: 22px;
+}
+
+
+nav .profile {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+nav .profile figure {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(71, 85, 79);
+    overflow: hidden;
+}
+
+nav .profile figure img {
+    width: 100%;
+    height: 100%;
+}
+
+#create-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(45deg, mediumseagreen, mediumaquamarine);
+    color: white;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+#create-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* Main Styles */
+
+main {
+    padding: 20px 5%;
+}
+
+main header {
+    display: flex;
+    gap: 20px;
+}
+
+main header .metric {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    width: 250px;
+    gap: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+main header .metric .icon {
+    width: 18px;
+    background-color: #fff7;
+    height: 18px;
+    border-radius: 50%;
+}
+
+main header .metric:first-child {
+    background-image: linear-gradient(45deg, black, mediumaquamarine );
+}
+
+main header .metric:hover {
+    transform: translateY(-5px);
+}
+
+main .employee-list {
+    padding: 25px 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  table thead td {
+      font-weight: bold;
+  }
+
+  #create {
+      position: absolute;
+      background-color: #fffc;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+  }
+
+  #create .content {
+      height: auto;
+      background-color: #fff;
+      box-shadow: 0 0 15px 15px #0003;
+      padding: 20px 40px;
+      position: relative;
+  }
+
+#create .content form {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#create .content form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dae7e0;
+}
+
+#create .content form button {
+    background-image: linear-gradient(45deg, black, mediumaquamarine);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    align-self: flex-start;
+    padding: 10px 20px;
+}
+
+#create #close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(45deg,red, mediumseagreen);
+    cursor: pointer;
+}

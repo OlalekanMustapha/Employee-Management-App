@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app" class="dark">
+        <!-- Navigation -->
+        <nav>
+            <a href="./" class="logo">
+                employee <span>X</span>
+            </a>
+
+            <div class="links">
+                <a href="#" class="employee">Employees</a>
+                <a href="#" class="settings">Settings</a>
+            </div>
+
+            <div class="profile">
+                <figure></figure>
+            </div>
+        </nav>
+        
+        <!-- Main App -->
+        <main>
+            <header>
+                <div class="metric">
+                    <div class="icon"></div>
+                    <div class="details">
+                        <h1>500+</h1>
+                        <p>No. of Employees</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="icon"></div>
+                    <div class="details">
+                        <h1>$450k</h1>
+                        <p>Salaries Paid</p>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="icon"></div>
+                    <div class="details">
+                        <h1>300+</h1>
+                        <p>in Attendance</p>
+                    </div>
+                </div>
+            </header>
+            <div class="employee-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Name</td>
+                            <td>Position</td>
+                            <td>Salary</td>
+                            <td>Department</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>John Doe</td>
+                            <td>Developer</td>
+                            <td>$6700</td>
+                            <td>Tech</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <!-- Create Button -->
+        <button id="create-btn">Create +</button>
+
+        <!-- Create Modal -->
+        <div id="create">
+            <div class="content">
+                <h2>Create an Employee</h2>
+                <button id="close">x</button>
+                <form id="create-form">
+                    <input type="text" id="name" placeholder="Enter Employee name...">
+                    <input type="text" id="position" 
+                    placeholder="Enter Employee position...">
+                    <input type="text" id="salary" 
+                    placeholder="Enter Employee salary...">
+                    <input type="text" id="department"
+                    placeholder="Enter Employee Department">
+                    <button>Create Employee</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- script below -->
+    <script src="./script.js"></script>
+</body>
+</html>
